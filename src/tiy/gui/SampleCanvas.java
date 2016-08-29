@@ -63,7 +63,11 @@ public class SampleCanvas extends Application {
             public void handle(MouseEvent e) {    // something in common with this method and setOnKeyPressed method to change color when button pressed
 //                e.getClickCount();
                 System.out.println("x: " + e.getX() + ", y: " + e.getY());
+                graphicsContext.strokeText("Press A to change color",25,25, DEFAULT_SCENE_WIDTH);
+                graphicsContext.strokeText("Press up arrow to increase circle size" , 75,75, DEFAULT_SCENE_WIDTH);
+                graphicsContext.strokeText("Press down arrow to decrease circle size", 125,125,DEFAULT_SCENE_WIDTH);
                 graphicsContext.strokeOval(e.getX(), e.getY(), strokeSize,strokeSize );
+//                graphicsContext.strokeText("This is the text", e.getX(), e.getY());
 
             }
         });
@@ -75,9 +79,9 @@ public class SampleCanvas extends Application {
         primaryStage.show();
     }
 
-    public static void main(String[] args) {
-        launch(args);
-    }
+//    public static void main(String[] args) {
+//        launch(args);
+//    }
 //    private void drawShapes(GraphicsContext gc) {
 //        gc.setFill(Color.RED);
 //        gc.setStroke(Color.BLUE);

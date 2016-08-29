@@ -21,17 +21,6 @@ public class HelloWorldAnonymousClasses {
         }
 
         HelloWorld englishGreeting = new EnglishGreeting();
-//
-//        HelloWorld jibberishGreeting = new HelloWorld() {         //Anonymous Class I added;
-//            String name = "Clay";
-//            public void greet() {
-//                greetSomeone("Clay");
-//            }
-//            public void greetSomeone(String someone){
-//                name = someone;
-//                System.out.println("Heybuindan, " +  name);
-//            }
-//        };
 
         HelloWorld frenchGreeting = new HelloWorld() {    //frenchGreeting = anonymous class; can't be re-used;
             String name = "tout le monde";
@@ -42,7 +31,7 @@ public class HelloWorldAnonymousClasses {
                 name = someone;
                 System.out.println("Salut " + name);
             }
-        };                               //anonymous classes are expression; thus, end with end-bracket and semi-colon
+        };       //anonymous classes are expression; thus, end with end-br
 
         HelloWorld spanishGreeting = new HelloWorld() {
             String name = "mundo";
@@ -55,9 +44,8 @@ public class HelloWorldAnonymousClasses {
             }
         };
         englishGreeting.greet();
-        frenchGreeting.greetSomeone("Clay");
+        frenchGreeting.greetSomeone("Fred");
         spanishGreeting.greet();
-//        jibberishGreeting.greet();
     }
 
     public static void main(String... args) {
